@@ -110,7 +110,8 @@ Temporary Items
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
-!.vscode/tasks.json
+# 230317 : tasks.json 무시 처리
+*.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
@@ -127,3 +128,7 @@ Temporary Items
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,c++,c
+
+# 230317 : .cpp를 제외한 예제 폴더 무시 처리
+Chapter_*
+!Chapter_*/*.cpp
